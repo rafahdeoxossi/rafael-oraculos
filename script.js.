@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Link de contato do WhatsApp
+  const whatsapp = "5515981285142";
+
+  document.querySelectorAll("[data-whatsapp]").forEach((botao) => {
+    botao.addEventListener("click", (evento) => {
+      evento.preventDefault();
+
+      const servico =
+        botao.dataset.servico || "atendimento oracular online";
+
+      const mensagem = encodeURIComponent(
+        `Olá, Rafael! Vim pelo seu site e gostaria de saber mais sobre ${servico} e consultar os valores.`
+      );
+
+      window.open(
+        `https://wa.me/${whatsapp}?text=${mensagem}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    });
+  });
+
+  // Perguntas frequentes: abrir e fechar respostas
+  document.querySelectorAll(".faq-question").forEach((pergunta) => {
+    pergunta.addEventListener("click", () => {
+      const resposta = pergunta.nextElementSibling;
+
+      if (!resposta) return;
+
+      const aberta = pergunta.getAttribute("aria-expanded") === "true";
+      pergunta.setAttribute("aria-expanded", String(!aberta));
+      resposta.hidden = aberta;
+    });
+  });
+
+  // Ano atual, se houver um elemento para ele no rodapé
+  const ano = document.querySelector("[data-current-year]");
+  if (ano) ano.textContent = new Date().getFullYear();
+});
