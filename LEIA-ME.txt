@@ -1,0 +1,10 @@
+SITE RAFAEL BRANCO SIMÕES — ORÁCULOS & SABERES ESPIRITUAIS
+
+1. Abra index.html em um navegador para visualizar.
+2. Os botões de WhatsApp já direcionam ao número 55 15 98128-5142, com mensagens diferentes para cada serviço.
+3. Para publicar gratuitamente: crie uma conta no GitHub, crie um repositório público, envie os arquivos index.html, styles.css e script.js na raiz e habilite Settings > Pages > Deploy from a branch > main /root. O endereço será parecido com usuario.github.io/nome-do-repositorio/.
+4. Alternativamente, use uma hospedagem gratuita de sites estáticos que aceite estes arquivos.
+5. Antes de publicar, CONFIRME que tem autorização para publicar o depoimento. Se não tiver, remova o bloco <section id="depoimentos"> do index.html até obtê-la.
+6. A ilustração da seção Sobre mim é provisória e pode ser substituída por uma foto real autorizada.
+7. Fontes Google são opcionais e dependem de conexão à internet; o site continua legível sem elas.
+8. Hospedagem gratuita não garante ranqueamento em buscadores nem agendamentos.
